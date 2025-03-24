@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Da Whey</title>
+
+   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+   <link rel="manifest" href="img/site.webmanifest">
+
+   <link rel="stylesheet" href="css/uikit.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+   <nav class="uk-navbar-container">
+      <div class="uk-container">
+         <div uk-navbar>
+
+            <div class="uk-navbar-left">
+               <ul class="uk-navbar-nav">
+                  <li>
+                     <a href="/">
+                        <img class="logo" src="img/logo4.png" alt="Da Whey" title="Webshop DaWhey" />
+                        DaWhey
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+
+               <ul class="uk-navbar-nav">
+                  <li class="uk-active"><a href="/"><span uk-icon="icon: home"></span>Home</a></li>
+                  <li><a href="login.html"><span uk-icon="icon: sign-in"></span>Login</a></li>
+                  <li><a href="register.html"><span uk-icon="icon: file-edit"></span>Register</a></li>
+                  <li>
+                     <a href="cart.html">
+                        <span uk-icon="icon: cart"></span>
+                        Shopping cart
+                        <span id="cart_amount_indicator" class="uk-badge">0</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#"><span uk-icon="icon: user"></span>Welcome Karim<span uk-navbar-parent-icon></span></a>
+                     <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                           <li class="uk-nav-header">Your Login</li>
+                           <li><a href="#"><span uk-icon="icon: settings"></span>Profile</a></li>
+                           <li><a href="#"><span uk-icon="icon: bag"></span>Orders</a></li>
+                           <li><a href="#"><span uk-icon="icon: credit-card"></span>Reciepts</a></li>
+                           <li><a href="#"><span uk-icon="icon: refresh"></span>Return</a></li>
+                           <li><a href="#"><span uk-icon="icon: heart"></span>Wish List</a></li>
+                           <li class="uk-nav-header">Contact</li>
+                           <li><a href="#"><span uk-icon="icon: info"></span>Customer Service</a></li>
+                           <li class="uk-nav-divider"></li>
+                           <li><a href="#"><span uk-icon="icon: sign-out"></span>Log out</a></li>
+                        </ul>
+                     </div>
+                  </li>
+               </ul>
+
+            </div>
+         </div>
+      </div>
+   </nav>v>
+
+      <main class="uk-container uk-padding uk-flex uk-flex-middle uk-flex-center">
+         <form method="POST" action="" class="uk-width-1-1 uk-flex uk-flex-center">
+            <div class="uk-card uk-card-default uk-width-4-5 uk-padding-small">
+               <div class="uk-card-header uk-flex uk-gap">
+                  <img src="img/logo4.png" class="uk-card-media uk-card-register-logo" alt="Webshop Het Witte Kippetje" title="Webshop Het Witte Kippetje" />
+                  <h2 class="uk-text-uppercase uk-margin-remove-top">Register</h2>
+               </div>
+               <div class="uk-alert-danger" uk-alert>
+                  <a href class="uk-alert-close" uk-close></a>
+                  <p>Error message when something is gone wrong</p>
+               </div>
+               <div class="uk-card-body uk-flex uk-flex-between uk-card-body-gap">
+                  <div class="uk-width-1-1 uk-flex uk-flex-column">
+                     <div class="">
+                        <label for="firstname" class="uk-form-label">First name<span class="uk-text-xsmall uk-text-italic uk-text-primary"> (Mandatory)</span></label>
+                        <input type="text" name="firstname" class="uk-input" id="firstname" placeholder="First name..." />
+                        <p class="uk-text-danger uk-text-xsmall uk-text-italic uk-margin-remove-vertical">Message if it isnt filled in</p>
+                     </div>
+                     <div class="uk-flex uk-gap uk-margin-top">
+                        <div class="uk-width-1-5">
+                           <label for="prefixes" class="uk-form-label">Prefixes</label>
+                           <input type="text" name="prefixes" class="uk-input" id="prefixes" placeholder="Prefixes..." />
+                        </div>
+                        <div class="uk-width-4-5">
+                           <label for="lastname" class="uk-form-label">Last name<span class="uk-text-xsmall uk-text-italic uk-text-primary"> (Mandatory)</span></label>
+                           <input type="text" name="lastname" class="uk-input" id="lastname" placeholder="Last name..." />
+                           <p class="uk-text-danger uk-text-xsmall uk-text-italic uk-margin-remove-vertical">Message if it isnt filled in</p>
+                        </div>
+                     </div>
+                     
+                     <div class="uk-flex uk-gap uk-margin-top">
+                        <div class="uk-width-3-5">
+                           <label for="street" class="uk-form-label">Street adress<span class="uk-text-xsmall uk-text-italic uk-text-primary"> (Mandatory)</span></label>
+                           <input type="text" name="street" class="uk-input" id="street" placeholder="Street adress..." />
+                           <p class="uk-text-danger uk-text-xsmall uk-text-italic uk-margin-remove-vertical">Message if it isnt filled in</p>
+                        </div>
+                        <div class="uk-width-1-5">
+                           <label for="housenumber" class="uk-form-label">House number<span class="uk-text-xsmall uk-text-italic uk-text-primary"> (Mandatory)</span></label>
+                           <input type="text" name="housenumber" class="uk-input" id="housenumber" placeholder="House number..." />
+                           <p class="uk-text-danger uk-text-xsmall uk-text-italic uk-margin-remove-vertical">Message if it isnt filled in</p>
+                        </div>
+                        <div class="uk-width-1-5">
+                           <label for="addition" class="uk-form-label">Additions</label>
+                           <input type="text" name="addition" class="uk-input" id="addition" placeholder="Additions..." />
+                        </div>
+                     </div>
+                     <div class="uk-flex uk-gap uk-margin-top">
+                        <div class="uk-width-1-5">
+                           <label for="zipcode" class="uk-form-label">Zip Code<span class="uk-text-xsmall uk-text-italic uk-text-primary"> (Mandatory)</span></label>
+                           <input type="text" name="zipcode" class="uk-input" id="zipcode" placeholder="Zip Code..." />
+                           <p class="uk-text-danger uk-text-xsmall uk-text-italic uk-margin-remove-vertical">Message if it isnt filled in</p>
+                        </div>
+                        <div class="uk-width-4-5">
+                           <label for="city" class="uk-form-label">City<span class="uk-text-xsmall uk-text-italic uk-text-primary"> (Mandatory)</span></label>
+                           <input type="text" name="city" class="uk-input" id="city" placeholder="City..." />
+                           <p class="uk-text-danger uk-text-xsmall uk-text-italic uk-margin-remove-vertical">Message if it isnt filled in</p>
+                        </div>
+                     </div>
+                     <div class="uk-margin-top">
+                        <label for="email" class="uk-form-label">Email<span class="uk-text-xsmall uk-text-italic uk-text-primary"> (Mandatory)</span></label>
+                        <input type="email" name="email" class="uk-input" id="email" placeholder="E-mail adress..." />
+                        <p class="uk-text-danger uk-text-xsmall uk-text-italic uk-margin-remove-vertical">Message if it isnt filled in</p>
+                     </div>
+                     <div class="uk-margin-top">
+                        <label for="password" class="uk-form-label">password<span class="uk-text-xsmall uk-text-italic uk-text-primary"> (Mandatory)</span></label>
+                        <input type="password" name="password" class="uk-input" id="password" placeholder="password..." />
+                        <p class="uk-text-danger uk-text-xsmall uk-text-italic uk-margin-remove-vertical">Message if it isnt filled in</p>
+                     </div>
+                     <div class="uk-margin-top">
+                        <label for="password-confirm" class="uk-form-label">Password verification<span class="uk-text-xsmall uk-text-italic uk-text-primary"> (Mandatory)</span></label>
+                        <input type="password" name="password_confirm" class="uk-input" id="password-confirm" placeholder="Fill your password again for confirmation..." />
+                        <p class="uk-text-danger uk-text-xsmall uk-text-italic uk-margin-remove-vertical">Message if it isnt filled in properly</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="uk-card-footer uk-flex uk-flex-between">
+                  <a href="login.html" class="">Log in</a>
+                  <button class="uk-button uk-button-primary" type="submit">Register</button>
+               </div>
+            </div>
+         </form>
+      </main>
+      
+      <script src="js/uikit.min.js"></script>
+      <script src="js/uikit-icons.min.js"></script>
+   </body>
+</html>

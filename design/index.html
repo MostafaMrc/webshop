@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Da Whey</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar>
+
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="/">
+                                <img class="logo" src="img/logo4.png" alt="Da Whey"
+                                    title="Webshop MyWhey" />
+                                DaWhey
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="uk-navbar-right">
+
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="/"><span uk-icon="icon: home"></span>Home</a></li>
+                        <li><a href="login.html"><span uk-icon="icon: sign-in"></span>Login</a></li>
+                        <li><a href="register.html"><span uk-icon="icon: file-edit"></span>Register</a></li>
+                        <li>
+                            <a href="cart.html">
+                                <span uk-icon="icon: cart"></span>
+                                Shopping cart
+                                <span id="cart_amount_indicator" class="uk-badge">0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><span uk-icon="icon: user"></span>Welcome Karim<span
+                                    uk-navbar-parent-icon></span></a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-nav-header">Your Login</li>
+                                    <li><a href="#"><span uk-icon="icon: settings"></span>Profile</a></li>
+                                    <li><a href="#"><span uk-icon="icon: bag"></span>Orders</a></li>
+                                    <li><a href="#"><span uk-icon="icon: credit-card"></span>Reciepts</a></li>
+                                    <li><a href="#"><span uk-icon="icon: refresh"></span>Return</a></li>
+                                    <li><a href="#"><span uk-icon="icon: heart"></span>Wish List</a></li>
+                                    <li class="uk-nav-header">Contact</li>
+                                    <li><a href="#"><span uk-icon="icon: info"></span>Customer Service</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#"><span uk-icon="icon: sign-out"></span>Log out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="uk-container uk-padding">
+        <div class="uk-alert-success" uk-alert>
+            <a href class="uk-alert-close" uk-close></a>
+            <p>Succesfully logged in!</p>
+        </div>
+        <div class="uk-grid">
+            <section class="uk-width-1-5">
+                <h4>Categories</h4>
+                <hr class="uk-divider" />
+                <div>
+                    <input class="uk-checkbox" id="chickens" type="checkbox" name="chickens" />
+                    <label for="chickens">Whey Protein</label>
+                </div>
+                <div>
+                    <input class="uk-checkbox" id="paint" type="checkbox" name="paint" />
+                    <label for="paint">Creatine</label>
+                </div>
+                <div>
+                    <input class="uk-checkbox" id="machines" type="checkbox" name="machines" />
+                    <label for="machines">Strap</label>
+                </div>
+                <div>
+                    <input class="uk-checkbox" id="hokken" type="checkbox" name="hokken" />
+                    <label for="hokken">Bars</label>
+                </div>
+            </section>
+            <section class="uk-width-4-5">
+                <h4 class="uk-text-muted uk-text-small">Chosen Categories: <span
+                        class="uk-text-small uk-text-primary">All</span></h4>
+                <div class="uk-flex uk-flex-home uk-flex-wrap">
+                    <!-- PRODUCT KAART 1 -->
+                    <a class="product-card uk-card uk-card-home uk-card-default uk-card-small uk-card-hover"
+                        href="product.html">
+                        <div class="uk-card-media-top uk-align-center">
+                            <img src="" alt="Witte kip" class="product-image uk-align-center">
+                        </div>
+                        <div class="uk-card-body uk-card-body-home">
+                            <p class="product-card-p">
+                                <!-- text for prodoct -->
+                            </p>
+                            <p class="product-card-p uk-text-large uk-text-bold uk-text-danger uk-text-right">&euro;
+                                <!-- Price -->
+                            </p>
+                        </div>
+                    </a>
+                    <!-- EINDE PRODUCT KAART 1 -->
+                    <a class="product-card uk-card uk-card-home uk-card-default uk-card-small uk-card-hover" href="/">
+                        <div class="uk-card-media-top uk-align-center">
+                            <img src="" alt="Witte kip" class="product-image uk-align-center">
+                        </div>
+                        <div class="uk-card-body uk-card-body-home">
+                            <p class="product-card-p">
+                                <!-- text for prodoct -->
+                            </p>
+                            <p class="product-card-p uk-text-large uk-text-bold uk-text-danger uk-text-right">&euro;
+                                <!-- Price -->
+                            </p>
+                        </div>
+                    </a>
+                    <a class="product-card uk-card uk-card-home uk-card-default uk-card-small uk-card-hover" href="/">
+                        <div class="uk-card-media-top uk-align-center">
+                            <img src="" alt="Witte kip" class="product-image uk-align-center">
+                        </div>
+                        <div class="uk-card-body uk-card-body-home">
+                            <p class="product-card-p">
+                                <!-- text for prodoct -->
+                            </p>
+                            <p class="product-card-p uk-text-large uk-text-bold uk-text-danger uk-text-right">&euro;
+                                <!-- price -->
+                            </p>
+                        </div>
+                    </a>
+
+                    <a class="product-card uk-card uk-card-home uk-card-default uk-card-small uk-card-hover" href="/">
+                        <div class="uk-card-media-top uk-align-center">
+                            <img src="" alt="Witte kip" class="product-image uk-align-center">
+                        </div>
+                        <div class="uk-card-body uk-card-body-home">
+                            <p class="product-card-p">
+                                <!-- text for prodoct -->
+
+                            </p>
+                            <p class="product-card-p uk-text-large uk-text-bold uk-text-danger uk-text-right">&euro;
+                                <!-- price -->
+                            </p>
+                        </div>
+                    </a>
+                    <a class="product-card uk-card uk-card-home uk-card-default uk-card-small uk-card-hover" href="/">
+                        <div class="uk-card-media-top uk-align-center">
+                            <img src="" alt="Witte kip" class="product-image uk-align-center">
+                        </div>
+                        <div class="uk-card-body uk-card-body-home">
+                            <p class="product-card-p">
+                                <!-- text for prodoct -->
+                            </p>
+                            <p class="product-card-p uk-text-large uk-text-bold uk-text-danger uk-text-right">&euro;
+                                <!-- price -->
+                            </p>
+                        </div>
+                    </a>
+                    <a class="product-card uk-card uk-card-home uk-card-default uk-card-small uk-card-hover" href="/">
+                        <div class="uk-card-media-top uk-align-center">
+                            <img src="" alt="Witte kip" class="product-image uk-align-center">
+                        </div>
+                        <div class="uk-card-body uk-card-body-home">
+                            <p class="product-card-p">
+                                <!-- text for prodoct -->
+
+                            </p>
+                            <p class="product-card-p uk-text-large uk-text-bold uk-text-danger uk-text-right">&euro;
+                                <!-- price -->
+                            </p>
+                        </div>
+                    </a>
+                    <a class="product-card uk-card uk-card-home uk-card-default uk-card-small uk-card-hover" href="/">
+                        <div class="uk-card-media-top uk-align-center">
+                            <img src="" alt="Witte kip" class="product-image uk-align-center">
+                        </div>
+                        <div class="uk-card-body uk-card-body-home">
+                            <p class="product-card-p">
+                                <!-- text for prodoct -->
+
+                            </p>
+                            <p class="product-card-p uk-text-large uk-text-bold uk-text-danger uk-text-right">&euro;
+                                <!-- price -->
+                            </p>
+                        </div>
+                    </a>
+                    <a class="product-card uk-card uk-card-home uk-card-default uk-card-small uk-card-hover" href="/">
+                        <div class="uk-card-media-top uk-align-center">
+                            <img src="" alt="Witte kip" class="product-image uk-align-center">
+                        </div>
+                        <div class="uk-card-body uk-card-body-home">
+                            <p class="product-card-p">
+                                <!-- text for prodoct -->
+
+                            </p>
+                            <p class="product-card-p uk-text-large uk-text-bold uk-text-danger uk-text-right">&euro;
+                                <!-- price -->
+                            </p>
+                        </div>
+                    </a>
+                    <a class="product-card uk-card uk-card-home uk-card-default uk-card-small uk-card-hover" href="/">
+                        <div class="uk-card-media-top uk-align-center">
+                            <img src="" alt="Witte kip" class="product-image uk-align-center">
+                        </div>
+                        <div class="uk-card-body uk-card-body-home">
+                            <p class="product-card-p">
+                                <!-- text for prodoct -->
+                            </p>
+                            <p class="product-card-p uk-text-large uk-text-bold uk-text-danger uk-text-right">&euro;
+                                <!-- price -->
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Da Whey</title>
+
+   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+   <link rel="manifest" href="img/site.webmanifest">
+
+   <link rel="stylesheet" href="css/uikit.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+   <nav class="uk-navbar-container">
+      <div class="uk-container">
+         <div uk-navbar>
+
+            <div class="uk-navbar-left">
+               <ul class="uk-navbar-nav">
+                  <li>
+                     <a href="/">
+                        <img class="logo" src="img/logo4.png" alt="Da Whey" title="Webshop DaWhey" />
+                        DaWhey
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+
+               <ul class="uk-navbar-nav">
+                  <li class="uk-active"><a href="/"><span uk-icon="icon: home"></span>Home</a></li>
+                  <li><a href="login.html"><span uk-icon="icon: sign-in"></span>Login</a></li>
+                  <li><a href="register.html"><span uk-icon="icon: file-edit"></span>Register</a></li>
+                  <li>
+                     <a href="cart.html">
+                        <span uk-icon="icon: cart"></span>
+                        Shopping cart
+                        <span id="cart_amount_indicator" class="uk-badge">0</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#"><span uk-icon="icon: user"></span>Welcome Karim<span uk-navbar-parent-icon></span></a>
+                     <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                           <li class="uk-nav-header">Your Login</li>
+                           <li><a href="#"><span uk-icon="icon: settings"></span>Profile</a></li>
+                           <li><a href="#"><span uk-icon="icon: bag"></span>Orders</a></li>
+                           <li><a href="#"><span uk-icon="icon: credit-card"></span>Reciepts</a></li>
+                           <li><a href="#"><span uk-icon="icon: refresh"></span>Return</a></li>
+                           <li><a href="#"><span uk-icon="icon: heart"></span>Wish List</a></li>
+                           <li class="uk-nav-header">Contact</li>
+                           <li><a href="#"><span uk-icon="icon: info"></span>Customer Service</a></li>
+                           <li class="uk-nav-divider"></li>
+                           <li><a href="#"><span uk-icon="icon: sign-out"></span>Log out</a></li>
+                        </ul>
+                     </div>
+                  </li>
+               </ul>
+
+            </div>
+         </div>
+      </div>
+   </nav>
+
+
+   <main class="uk-container uk-padding">
+      <div class="uk-grid">
+         <!-- BEGIN: BEDANKT -->
+         <section class="uk-width-3-3 uk-flex uk-flex-column uk-cart-gap uk-margin-large-bottom">
+            <div class="uk-card-default uk-card-small uk-flex uk-flex-column uk-padding-small">
+               <div class="uk-card-header">
+                  <h1>Thank you for your order!</h1>
+               </div>
+               <div class="uk-card-body uk-flex uk-flex-column uk-flex-between">
+                  <div class="uk-flex uk-flex-between uk-flex-center">
+                     <div>
+                        <h4 class="uk-margin-remove">Great to see that you chose us!</h4>
+                        <h4 class="uk-margin-remove">You will recieve an email to have more information over your order
+                           soon.</h4>
+                     </div>
+                     <div class="uk-card-default uk-padding-small uk-flex-column uk-flex-middle uk-flex-center">
+                        <h3 class="uk-text-center">Order number</h3>
+                        <h2 class="uk-text-center">0128671</h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- EINDE: BEDANKT -->
+
+         <!-- BEGIN: EINDAFREKENING -->
+         <section class="uk-width-3-3">
+            <div class="uk-card-default uk-card-small uk-flex uk-flex uk-flex-column uk-flex-between uk-padding-small">
+               <div class="uk-card-header">
+                  <h2>Your order overview</h2>
+               </div>
+               <div class="uk-card-body uk-flex uk-flex-column uk-flex-between">
+                  <table class="uk-table uk-table-divider uk-width-2-2 order-confirm-table">
+                     <thead>
+                        <tr>
+                           <th class="uk-width-2-3">Product</th>
+                           <th class="uk-text-center">Price</th>
+                           <th class="uk-text-center">Amount</th>
+                           <th class="uk-text-right">Sub total</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="uk-flex uk-flex-middle uk-gap">
+                              <img class="uk-order-confirm-img" src="img/brown-chicken.jpg" alt="" />
+                              <p class="uk-margin-remove">PRODUCT</p>
+                           </td>
+                           <td class="uk-text-center">&euro; PRICE</td>
+                           <td class="uk-text-center">AMOUNT</td>
+                           <td class="uk-text-right">&euro; PRICE</td>
+                        </tr>
+                        <tr>
+                           <td class="uk-flex uk-flex-middle uk-gap">
+                              <img class="uk-order-confirm-img" src="img/brown-chicken.jpg" alt="" />
+                              <p class="uk-margin-remove">PRODUCT</p>
+                           </td>
+                           <td class="uk-text-center">&euro; PRICE</td>
+                           <td class="uk-text-center">Amount</td>
+                           <td class="uk-text-right">&euro; PRICE</td>
+                        </tr>
+                     </tbody>
+                     <tfoot>
+                        <tr>
+                           <td colspan="3" class="uk-text-right uk-text-uppercase">Total to pay</td>
+                           <td class="uk-text-right">&euro; PRICE</td>
+                        </tr>
+                        <tr>
+                           <td colspan="3" class="uk-text-right uk-text-uppercase">Already paid</td>
+                           <td class="uk-text-right">&euro; PRICE</td>
+                        </tr>
+                        <tr>
+                           <td colspan="3" class="uk-text-right uk-text-uppercase uk-text-bolder">Remaining to pay</td>
+                           <td class="uk-text-right uk-text-bolder">&euro; PRICE</td>
+                        </tr>
+                     </tfoot>
+                  </table>
+               </div>
+            </div>
+         </section>
+         <!-- EINDE: EINDAFREKENING -->
+      </div>
+   </main>
+
+   <script src="js/uikit.min.js"></script>
+   <script src="js/uikit-icons.min.js"></script>
+</body>
+
+</html>
